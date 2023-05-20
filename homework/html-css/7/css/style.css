@@ -1,0 +1,66 @@
+*{
+    padding: 0px ;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.conteiner{
+    display: flex;
+    justify-content: space-around;
+    width: 87%;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+.conteiner .col{
+    width: 30%;
+    height: 400px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+
+}
+.cool {
+    position: absolute ;
+    display: inline;
+    margin:auto;
+    padding: auto;
+    font-size: 35px;
+    text-transform: uppercase ;
+    text-align: end;
+    color: rgb(218, 218, 233);
+    
+
+}
+    
+
+.col img{
+    transition: 1.5s;
+    
+    display: block;
+    
+}
+.col img:hover{
+    transform: scale(1.5)
+}
+
+ img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+ 
+
+
+@media (max-width: 1284px) and (min-width: 800) {
+    .conteiner .col{
+        width: 100%;
+    }
+}
+@media(max-width:902px){
+    .conteiner .col{
+        /* высшая приоритетность  */
+        width: 100% !important ;
+    }
+}

@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.rel{
+    width: 400px;
+    height: 300px;
+    margin: 100px auto;
+    background-color: yellow;
+    position: relative;
+}
+.rel .red{
+    background-color: red;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+.rel .blue{
+    background-color: blue;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: 20;
+}
+
+.container{
+    display: flex;
+    width: 87%;
+    margin: 100px auto;
+    justify-content: space-between;
+    margin-bottom: 2000px;
+
+}
+
+.container .col{
+    width: 30%;
+    height: 300px;
+    position: relative;
+
+}
+.col .red, .col .blue{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.col .red{
+    background-color: red;
+    z-index: 10;
+    width: 20%;
+    border-radius: 50px;
+    height: 50px;
+    right: 30px;
+    bottom: 30px;
+}
+
+.col .blue{
+    background-color: blue;
+    z-index: 1;
+}
+
+.round{
+    width: 100%;
+    height: 75px;
+    background-color: green;
+    position: fixed;
+    top: 0;left: 0;z-index: 999999;
+}

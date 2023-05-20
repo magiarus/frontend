@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.box{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(87, 173, 243);
+}
+.box .header{
+    width: 100%;
+    height: 10%;
+}
+ .one{
+padding: 10px 0px 10px 100px ;
+}
+.one .two {
+    padding: 10px 20px;
+}
